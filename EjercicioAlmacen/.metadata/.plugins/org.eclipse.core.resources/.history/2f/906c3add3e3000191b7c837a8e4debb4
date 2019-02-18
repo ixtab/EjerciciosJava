@@ -1,0 +1,21 @@
+
+public class Pulga extends Animal {
+
+	public Pulga(String nombre) {
+		super("Pulga");
+		
+	}
+
+	@Override
+	public String morder() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String mover() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

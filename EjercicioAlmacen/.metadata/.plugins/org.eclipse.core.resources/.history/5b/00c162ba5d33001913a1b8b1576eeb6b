@@ -1,0 +1,45 @@
+package almacen;
+
+public class ProductoFerreteria extends Producto implements IArticulo {
+
+	public ProductoFerreteria(
+			String categoria, 
+			String descripcion, 
+			int stock, 
+			int stockMinimo, 
+			float precioCompra,
+			float precioVenta) {
+		super(categoria, descripcion, stock, stockMinimo, precioCompra, precioVenta);
+		
+	}
+
+	@Override
+	public float comprar(int cantidad) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public float comprar() {
+		return this.getPrecioCompra();
+	}
+
+	@Override
+	public float vender(int cantidad) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public float vender() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public String prepararProducto() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

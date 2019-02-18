@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class Test {
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner("leyendo pepe, algo 456");
+        while (teclado.hasNext()) {
+            if (teclado.hasNextLine())
+                System.out.print("*");
+            if (teclado.hasNextInt())
+                System.out.print("entero");
+            teclado.next();
+        }
+    }
+}

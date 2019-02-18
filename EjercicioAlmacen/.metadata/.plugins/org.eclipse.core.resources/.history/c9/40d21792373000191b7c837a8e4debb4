@@ -1,0 +1,7 @@
+public class Test {
+    public static void main(String args[]) {
+        String s = new String("true"); 
+        Boolean b = new Boolean(true);
+        if (!s.equals(b)) System.out.print("false");
+    }
+}

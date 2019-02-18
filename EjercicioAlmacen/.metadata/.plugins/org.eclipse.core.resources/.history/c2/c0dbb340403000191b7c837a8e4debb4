@@ -1,0 +1,12 @@
+
+public class Inicio {
+
+	public static void main(String[] args) {
+		Animal toby = new Perro();
+		Animal cr7 = new Pulga();
+		System.out.println(cr7.morder(toby) + " en la oreja");
+		cr7.mover();
+		System.out.println(cr7.morder(toby) + " en la tripa");
+	}
+
+}

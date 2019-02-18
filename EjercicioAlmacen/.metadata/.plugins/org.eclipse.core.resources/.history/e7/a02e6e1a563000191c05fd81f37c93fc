@@ -1,0 +1,34 @@
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.Vector;
+
+public class Inicio {
+
+	public static void main(String[] args) {
+		
+		HashSet<String> arr1 = new HashSet<String>();
+		arr1.add("Pepe1");
+		arr1.add("Pepe");
+		arr1.add("pepe");
+		arr1.add("asda");
+		
+		LinkedList<String> arr2 = new LinkedList<String>();
+		arr2.add("Pepf");
+		arr2.add("Pepe");
+		arr2.add("Pepe");
+		
+		System.out.println(arr1.hashCode());
+		System.out.println(arr2.hashCode());
+		// System.out.println(arr1.get(0).hashCode()); get no funciona con HashSet.
+		System.out.println(arr2.get(1).hashCode());
+		System.out.println(arr2.get(2).hashCode());
+		
+		System.out.println(arr2.get(0).compareTo(arr2.get(1)));
+		
+		for (String a : arr1) {
+			System.out.println(a);
+		}
+	}
+
+}

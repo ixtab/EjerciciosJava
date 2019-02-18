@@ -1,0 +1,55 @@
+package taller;
+
+public class Coche {
+	
+	// Propiedades del objeto
+	private String matricula;
+	private String marca;
+	private String modelo;
+	private Motor motor;
+	
+	// Propiedades de la clase o instancia.
+	public static String info ="El mejor concesionario de la historia";
+	public static int contadorCoches = 0;
+	
+	public Coche(String matricula, String marca, String modelo, 
+          Motor motor) {
+		this.matricula = matricula;
+		this.marca = marca;
+		this.modelo = modelo;
+		this.motor = motor;
+		contadorCoches++;
+	}
+	
+	public Coche(String matricula, String marca, String modelo,
+		  int motorCaballos, int motorCombustible) {
+		this.matricula = matricula;
+		this.marca = marca;
+		this.modelo = modelo;
+		this.motor = new Motor(motorCaballos, motorCombustible);	
+		contadorCoches++;
+		}
+
+	public String getMatricula() {
+		return matricula;
+	}
+
+	public String getMarca() {
+		return marca;
+	}
+
+	public String getModelo() {
+		return modelo;
+	}
+
+	public Motor getMotor() {
+		return motor;
+	}
+
+	public String estado() {
+		return "Matricula=" + matricula + ", Marca=" + marca + 
+			   ", Modelo=" + modelo + ", Motor: (" + motor.estado() + ")";
+	}
+
+
+}

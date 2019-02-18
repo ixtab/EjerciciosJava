@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="false" key="/prueba/prueba.uml:DISPLAY_MODEL"/>
+	<item value="" key="/prueba/prueba.uml:defaultpackagename"/>
+	<item value="false" key="/prueba/prueba.uml:DISPLAY_PACKAGES"/>
+	<item value="false" key="/prueba/prueba.uml:DISPLAY_CU"/>
+	<list key="/prueba/prueba.uml:creationpaths">
+		<item value="java.* ;  ; java"/>
+		<item value="org.eclipse.papyrus.* ;  ; *"/>
+		<item value="org.eclipse.* ; org.eclipse.papyrus.* ; *"/>
+		<item value="org.osgi.* ;  ; osgi.*"/>
+		<item value="datatype.* ;  ; datatype"/>
+	</list>
+	<list key="/prueba/prueba.uml:searchpaths">
+		<item value="java"/>
+		<item value="*"/>
+		<item value="osgi.*"/>
+		<item value="datatype"/>
+	</list>
+</section>

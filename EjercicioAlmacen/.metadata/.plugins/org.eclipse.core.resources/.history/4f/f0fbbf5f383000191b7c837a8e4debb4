@@ -1,0 +1,15 @@
+import java.util.Random;
+public class Test {
+    public static void main(String[] args) {
+        double d = 0.;
+        try {
+            d = new Random().nextInt() / new Random().nextInt();
+        }catch (Exception ex) {
+            System.out.println("Exception");
+        }catch (RuntimeException ex) {
+            System.out.println("RuntimeException");
+        } catch (ArithmeticException ex) {
+            System.out.println("ArithmeticException");
+        }
+    }
+}

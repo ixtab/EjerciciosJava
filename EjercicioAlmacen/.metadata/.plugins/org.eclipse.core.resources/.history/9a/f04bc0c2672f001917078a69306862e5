@@ -1,0 +1,14 @@
+import java.util.ArrayList;
+
+import venta_localidades.Cliente;
+
+
+public class Inicio {
+
+	public static void main(String[] args) {
+		ArrayList<Cliente> clientes = new ArrayList<Cliente>(); 
+		Cliente c = new Cliente("Juan Perez", 23, "658752237");
+		clientes.add(c);	
+	}
+
+}

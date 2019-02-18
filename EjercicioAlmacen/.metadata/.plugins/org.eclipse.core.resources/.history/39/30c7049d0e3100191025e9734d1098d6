@@ -1,0 +1,20 @@
+
+public class Principal {
+
+	public static void main(String[] args) {
+		int cero = 0;
+		int resultado;
+		
+		try {
+			resultado = 16 / cero;
+			System.out.println("Hola excepción");
+		} catch (ArithmeticException e) {
+			System.out.println("Se ha producido una excepción");
+			System.out.println(e + ". " + e.getMessage() + ". " + e.getCause());
+		} finally {
+			
+		}
+
+	}
+
+}

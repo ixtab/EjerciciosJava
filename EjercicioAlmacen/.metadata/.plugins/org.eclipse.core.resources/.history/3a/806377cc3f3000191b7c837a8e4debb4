@@ -1,0 +1,23 @@
+
+public class Pulga extends Animal {
+
+	//constructor
+	
+	public Pulga(String nombre) {
+		super("Pulga");
+	}
+	
+	
+	//methods
+	
+	@Override
+	public String morder(Animal ani) {
+		return "La pulga muerde al " + ani;
+	}
+
+	@Override
+	public String mover() {
+		return "La pulga se mueve";
+	}
+
+}

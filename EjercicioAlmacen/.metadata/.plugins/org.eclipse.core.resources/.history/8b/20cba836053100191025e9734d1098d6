@@ -1,0 +1,11 @@
+import java.util.ArrayList;
+
+public class ListadoPacientes {
+	
+	private ArrayList<Paciente> lista = new ArrayList<Paciente>();
+	
+	public void addPaciente(Paciente pa) {
+		lista.add(pa);
+	}
+	
+}

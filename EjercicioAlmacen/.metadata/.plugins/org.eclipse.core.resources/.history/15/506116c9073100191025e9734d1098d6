@@ -1,0 +1,28 @@
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		ListadoPacientes.addPaciente("Juan Perez", "654654654");
+		ListadoPacientes.addPaciente("María García", "612312312");
+		System.out.println(ListadoPacientes.getListado());
+		ListadoPacientes.lista.get(0).registrarCita("Esguince de tobillo");
+		ListadoPacientes.lista.get(0).registrarCita("Gastritis");
+		ListadoPacientes.lista.get(1).registrarCita("Cancer de nariz");
+		ListadoPacientes.lista.get(1).registrarCita("Cirugia de nariz");
+		ListadoPacientes.lista.get(1).registrarCita("Paciente recuperado");
+		
+		/*
+		Paciente juanPerez = new Paciente("Juan Perez", "655655655");
+		
+		juanPerez.registrarCita("Tobillo roto");
+				
+		juanPerez.registrarCita("Dermatitis");
+		
+		juanPerez.registrarCita("Tobillo recuperado");
+			
+		System.out.println(juanPerez.getVisitas());
+		*/
+	}
+
+}

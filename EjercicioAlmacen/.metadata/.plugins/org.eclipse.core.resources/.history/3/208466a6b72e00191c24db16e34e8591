@@ -1,0 +1,18 @@
+import java.util.Scanner;
+import matematicas.Matematicas;
+
+public class Inicio {
+
+	public static void main(String[] args) {
+		Scanner scn = new Scanner(System.in);
+		System.out.println("Pon un número: ");
+		scn.nextLine();
+		
+		
+		System.out.println(Matematicas.generarTablaMultiplicar(n));
+		System.out.println(Matematicas.comprobarSigno(n));
+		System.out.println(Matematicas.trianguloNumerico(n));
+		scn.close();
+	}
+
+}

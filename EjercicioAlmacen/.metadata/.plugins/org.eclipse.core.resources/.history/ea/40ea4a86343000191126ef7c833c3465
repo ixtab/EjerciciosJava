@@ -1,0 +1,11 @@
+
+public class Test{
+    public void unMetodo( ){
+         int num=10; // línea 1
+        System.out.print(num); // línea 2
+    }
+    public static void main (String args[ ]){
+        Test obj=new Test( ); // línea 3
+        obj.unMetodo( ); // línea 4
+    }
+}

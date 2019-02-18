@@ -1,0 +1,12 @@
+package matematicas;
+
+public class Matematicas {
+	public static String  generarTablaMultiplicar(int numero) {
+		String tabla = "";
+		for (int i = 1; i<= 10; i++) {
+			return tabla = tabla + numero + " x " + i + " = " + (numero *i) + "\n";
+		}
+		return tabla;
+		
+	}
+}

@@ -1,0 +1,14 @@
+package dibujo;
+
+public class Triangulo extends Figura {
+
+	public Triangulo() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Triangulo(int alto, int ancho) {
+		super(alto, ancho);
+		// TODO Auto-generated constructor stub
+	}
+
+}

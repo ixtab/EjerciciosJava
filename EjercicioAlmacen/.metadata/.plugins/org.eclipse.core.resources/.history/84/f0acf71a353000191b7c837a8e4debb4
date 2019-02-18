@@ -1,0 +1,11 @@
+
+public class Test{
+	public static void main(String[] args) {
+	System.out.println(algo(1,1));	
+	}
+	
+	   static int algo(int i, int j){ return i*j;    } //función 1
+	   static long algo2(int i, int j){ return i*j;} //función 2
+	   static long algo3(long i, int j){ return i*j;} //función 3
+	   static long algo4(byte i, long j){ return i*j;} //función 4
+}

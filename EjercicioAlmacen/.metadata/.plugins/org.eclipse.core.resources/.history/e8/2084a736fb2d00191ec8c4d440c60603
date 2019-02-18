@@ -1,0 +1,11 @@
+package fiestas;
+
+public class Local {
+	public String nombre;
+	public String direccion;
+	public String cp;
+	public String localidad;
+	public String provincia;
+	public int aforo;
+
+}

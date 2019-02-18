@@ -1,0 +1,16 @@
+
+public class Principal {
+
+	public static void main(String[] args) {
+			Coche rayo = new Coche();
+			System.out.println(rayo.acelerar(50));
+			System.out.println(rayo.getClass().getName());
+			ver(rayo);
+			
+	}
+	
+	public static void ver(Vehiculo v) {
+		System.out.println(v.getClass().getTypeName());
+	}
+
+}

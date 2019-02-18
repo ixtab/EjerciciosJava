@@ -1,0 +1,8 @@
+
+public interface Vehiculo {
+	public int VELOCIDAD_MAXIMA = 120;
+	public int velocidad = 2;
+	public String frenar(int cuanto);
+	public String acelerar(int cuanto);
+	
+}

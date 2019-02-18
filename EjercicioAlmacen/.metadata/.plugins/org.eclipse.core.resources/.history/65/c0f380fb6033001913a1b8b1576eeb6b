@@ -1,0 +1,50 @@
+package almacen;
+
+public class ProductoFerreteria extends Producto implements IArticulo {
+
+	public ProductoFerreteria(
+			String descripcion, 
+			int stock, 
+			int stockMinimo, 
+			float precioCompra,
+			float precioVenta) {
+		super("Ferreteria", descripcion, stock, stockMinimo, precioCompra, precioVenta);
+		
+	}
+
+	@Override
+	public float comprar(int cantidad) {
+		this.setStock(this.getStock()+cantidad);
+		return this.getPrecioCompra() * cantidad;
+	}
+
+	@Override
+	public float comprar() {
+		this.setStock(this.getStock()+1);
+		return this.getPrecioCompra();
+	}
+
+	@Override
+	public float vender(int cantidad) {
+		// TODO Auto-generated method stub
+		this.setStock(this.getStock()-cantidad);
+		System.out.println(reposicion());
+		return this.getPrecioVenta()  * cantidad + (this.getPrecioVenta()*cantidad*IVA/100);
+		
+	}
+
+	@Override
+	public float vender() {
+		// TODO Auto-generated method stub
+		this.setStock(this.getStock()-1);
+		System.out.println(reposicion());
+		return this.getPrecioVenta() + (this.getPrecioVenta()*IVA/100);
+	}
+
+	@Override
+	public String prepararProducto() {
+		
+		return null;
+	}
+
+}

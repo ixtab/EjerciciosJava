@@ -1,0 +1,12 @@
+
+public class Inicio {
+
+	enum Talla { S, M, L, XL, XXL, XXXL }
+	public static void main(String[] args) {
+	Talla t = Talla.XXL;
+	System.out.println(Talla.valueOf("XXL").toString()+
+	            t.ordinal()+     
+	            t.toString().replace('X', 'x').substring(1,3));
+	}
+		
+}

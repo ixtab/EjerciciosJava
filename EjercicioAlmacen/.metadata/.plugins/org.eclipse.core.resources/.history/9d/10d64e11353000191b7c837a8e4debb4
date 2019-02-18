@@ -1,0 +1,9 @@
+
+public class Test{
+    int algo(int i, int j){ return i*j;    } //función 1
+    long algo2(int a, int b){ return a*b;} //función 2
+    long algo3(long i, int j){ return i*j;} //función 3
+    long algo4(byte i, long j){ return i*j;} //función 4
+    
+    s
+}

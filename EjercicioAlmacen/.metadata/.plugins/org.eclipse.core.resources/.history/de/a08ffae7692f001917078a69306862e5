@@ -1,0 +1,8 @@
+package venta_localidades;
+
+import java.util.ArrayList;
+
+public class Espectaculo {
+	
+
+}

@@ -1,0 +1,11 @@
+import java.time.LocalDateTime;
+
+public class Cita {
+	private String observaciones;
+	private LocalDateTime fechaHora;
+	
+	public Cita(String observaciones) {
+		this.observaciones = observaciones;
+		this.fechaHora = LocalDateTime.now();
+	}
+}

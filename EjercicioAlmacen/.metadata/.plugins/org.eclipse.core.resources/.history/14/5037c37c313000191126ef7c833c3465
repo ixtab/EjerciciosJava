@@ -1,0 +1,46 @@
+ class Saludo {
+	
+	public static void main(String[] args) {
+		System.out.println("¡¡¡Hola Universo!!!");
+		
+		int a = 129;
+		byte b = 0; 
+		b = (byte)a; 				// al pasar del rango vuelve a empezar desde abajo 
+									//(de forma cíclica) y no da error.- 
+		System.out.println(a + ".- "+ b);
+		
+		float numFloat = 0.5f; 		// Los float los alamacena internamente como double.-
+									// numero = numero + (float)50.5;
+									// numero = numero + 50.3f;	
+		System.out.println(numFloat/3);
+		
+		double numDouble = 0.5;
+		System.out.println(numDouble/3);
+		
+		float pi = (float)Math.PI;
+		System.out.println(pi);
+		System.out.println(Math.PI);
+	
+		char letra = '\t'; 			// Importante, los caracteres van entre comillas simples
+									//las cadenas en dobles
+		System.out.println(letra + "en unicode es " + (int)letra);
+
+		final int unicode = 116; 	//Con final hacemos que unicode sea de tipo constante
+									// p.e. unicode =1; no se puede hacer.-
+		System.out.println((char)unicode);
+		
+		int numero1 = 0;
+		int numero2;
+		numero2 = numero1>0 ? 1 : numero1 == 0 ? 0: -1;
+		System.out.println(numero2);
+		int inte= 2;
+		for (int i = 0; i< 31; i++) {
+			inte = inte * 2;
+			System.out.println(inte);
+		}
+		System.out.println(("---------------"));
+		
+	}
+	
+	
+}

@@ -1,0 +1,8 @@
+public class Test {
+    public static void main(String argv[]) {
+        List<Object> list = new ArrayList<Object>();
+        ArrayList<String> listStr = list;
+        listStr.add(0, "Hola");
+        System.out.println(listStr.toString());
+    }
+}

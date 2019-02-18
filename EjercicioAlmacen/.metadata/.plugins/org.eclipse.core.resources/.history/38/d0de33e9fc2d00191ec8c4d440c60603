@@ -1,0 +1,101 @@
+import java.util.Scanner;
+
+import fiestas.Fiesta;
+
+public class Inicio {
+
+	public static void main(String[] args) {
+		
+		Fiesta blas = new Fiesta(
+				"5 de marzo a las 9",
+				"Blas",
+				"C/ nueva, 23"
+		);	
+		Scanner entrada = new Scanner(System.in);
+		String opcion = "";
+					
+		do {
+			System.out.println("¿Que quieres hacer?");
+			opcion = entrada.nextLine();
+			opcion = opcion.toLowerCase().trim();
+			String[] op = opcion.split(" ");
+			switch (op[0]) {
+				case "invitar":
+					if (op.length > 1) {
+						blas.invitar(Integer.parseInt(op[1]));
+						System.out.println("Has invitado a " + op[1] + " personas");
+					} else {
+						blas.invitar();
+						System.out.println("Has invitado a una persona");
+					}
+					break;
+				case "consultar":
+					if (op.length < 2) {
+						System.out.println(blas.informa());
+					} else {
+						op[1] = op[1].toLowerCase();
+						switch (op[1]) {
+						case "direccion":
+							System.out.println("La dirección es en " + blas.getDireccion());
+							break;
+						case "fecha":
+							System.out.println("La fiesta es el " + blas.getFechaHoraFiesta());
+							break;
+						case "hora":
+							System.out.println("La fiesta es el " + blas.getFechaHoraFiesta());
+							break;
+						case "anfitrion":
+							System.out.println("El anfitrión de la fiesta es " + blas.getNombreAnfitrion());
+							break;
+						case "invitados":
+							System.out.println("Hay " + blas.getInvitados() + " invitados");
+							break;
+						case "bocadillos":
+							System.out.println("Hay " + blas.getBocadillos() + " bocadillos");
+							break;
+						case "bebidas":
+							System.out.println("Hay " + blas.getBebidas() + " bebidas");
+							break;
+							
+						default:
+							System.out.println("No sé que quieres consultar");
+							break;
+						}
+					}
+					break;
+				case "cancelar":
+					blas.cancelarInvitacion();
+					System.out.println("Se ha cancelado una invitación");
+					break;
+				
+				case "salir":
+					System.out.println("Hasta Pronto!");
+					break;
+				default:
+					System.out.println("No te he entendido");
+					break;
+			};
+		} while (!opcion.toLowerCase().equals("salir"));
+		entrada.close();
+		
+	}
+
+}
+
+/*System.out.println(blas.informa());
+
+blas.invitar();
+
+System.out.println(blas.informa());
+
+blas.invitar(7);
+
+System.out.println(blas.informa());
+
+blas.invitar(8);
+
+System.out.println(blas.informa());
+
+blas.cancelarInvitacion();
+
+System.out.println(blas.informa());*/

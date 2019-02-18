@@ -1,0 +1,7 @@
+package venta_localidades;
+
+import java.util.ArrayList;
+
+public class Espectaculo {
+ArrayList<Cliente> clientes = new ArrayList<Cliente>(); 
+}

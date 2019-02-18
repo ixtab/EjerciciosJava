@@ -1,0 +1,12 @@
+import dibujo.*;
+
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Triangulo f = new Triangulo();
+		f.setAncho(12);
+		f.alto = 23;
+	}
+
+}

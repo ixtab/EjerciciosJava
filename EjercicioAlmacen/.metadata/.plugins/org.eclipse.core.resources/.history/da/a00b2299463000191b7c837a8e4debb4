@@ -1,0 +1,17 @@
+import java.util.RandomAccess;
+
+public class Coche implements Vehiculo, RandomAccess {
+
+	@Override
+	public String frenar(int cuanto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String acelerar(int cuanto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

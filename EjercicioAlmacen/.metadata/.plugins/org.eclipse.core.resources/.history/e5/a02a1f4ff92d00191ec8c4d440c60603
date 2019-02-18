@@ -1,0 +1,69 @@
+import java.util.Scanner;
+
+import fiestas.Fiesta;
+
+public class Inicio {
+
+	public static void main(String[] args) {
+		
+		Fiesta blas = new Fiesta(
+				"5 de marzo a las 9",
+				"Blas",
+				"C/ nueva, 23"
+		);	
+		Scanner entrada = new Scanner(System.in);
+		String opcion = "";
+					
+		do {
+			System.out.println("Escribe la opción: ");
+			opcion = entrada.nextLine();
+			opcion = opcion.toLowerCase().trim();
+			String[] op = opcion.split(" ");
+			switch (op[0]) {
+				case "invitar":
+					if (op.length > 1) {
+						blas.invitar(Integer.parseInt(op[1]));
+					} else {
+						blas.invitar();
+					}
+					break;
+				case "consultar":
+					if (op.length < 2) {
+						System.out.println(blas.informa());
+					}
+					break;
+				case "cancelar":
+					blas.cancelarInvitacion();
+					break;
+				case "salir":
+					System.out.println("Hasta Pronto!");
+					break;
+				default:
+					System.out.println("No te he entendido");
+					break;
+			};
+			
+		} while (!opcion.toLowerCase().equals("salir"));
+		entrada.close();
+		
+	}
+
+}
+
+/*System.out.println(blas.informa());
+
+blas.invitar();
+
+System.out.println(blas.informa());
+
+blas.invitar(7);
+
+System.out.println(blas.informa());
+
+blas.invitar(8);
+
+System.out.println(blas.informa());
+
+blas.cancelarInvitacion();
+
+System.out.println(blas.informa());*/

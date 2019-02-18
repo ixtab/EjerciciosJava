@@ -1,0 +1,20 @@
+
+public class Moto implements Vehiculo {
+
+	public Moto() {
+		
+	}
+
+	@Override
+	public String frenar(int cuanto) {
+		setVelocidad(getVelocidad() - cuanto);
+		return "El coche va a " + getVelocidad(); 
+	}
+
+	@Override
+	public String acelerar(int cuanto) {
+		setVelocidad(getVelocidad() + cuanto);
+		return "El coche va a " + getVelocidad(); 
+	}
+
+}

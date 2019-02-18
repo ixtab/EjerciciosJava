@@ -1,0 +1,15 @@
+
+public class Test{
+	
+	private int i;
+	public String toString(){return "numero: "+i*2+2;}
+	
+	public static void main(String[] args) {
+		 
+		Test test = new Test();
+        System.out.println(test);  
+	}
+	
+	   
+	   
+}

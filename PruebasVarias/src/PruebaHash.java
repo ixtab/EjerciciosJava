@@ -1,0 +1,16 @@
+
+import java.util.HashSet;
+
+public class PruebaHash {
+
+	
+	static HashSet<String> hs = new HashSet<String>(); 
+	
+	public static void addToHs(String algo){
+		System.out.println(hs.add(algo));
+		System.out.println(hs.toString());
+		System.out.println("---------------");
+
+	}
+	
+}

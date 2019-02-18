@@ -1,0 +1,23 @@
+package dibujo;
+
+public class Figura {
+	private int alto;	
+	private int ancho;
+	
+	public Figura(){
+	}
+	
+	public Figura(int alto, int ancho) {
+		this.alto = alto;
+		this.ancho = ancho;
+	}
+
+	@Override
+	public String toString() {
+		return "Figura [alto=" + alto + ", ancho=" + ancho + "]";
+	}
+	
+	public double Area() {
+		return 0;
+	}
+}

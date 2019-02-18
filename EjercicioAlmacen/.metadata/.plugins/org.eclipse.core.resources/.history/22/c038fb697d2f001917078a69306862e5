@@ -1,0 +1,23 @@
+package dibujo;
+
+public class Circunferencia extends Figura {
+
+	public Circunferencia() {
+		
+	}
+
+	public Circunferencia(int radio) {
+		super(radio, radio);
+		
+	}
+	
+	@Override
+	public double Area() {
+		return Math.PI*(this.ancho * this.ancho);
+	}
+
+	@Override
+	public String toString() {
+		return "Circunferencia [radio=" + alto + "]";
+	}
+}

@@ -1,0 +1,17 @@
+import java.util.ArrayList;
+
+public class Paciente {
+
+	private String nombre;
+	private String tlf;
+	private ArrayList<Cita> visitas;
+	
+	public Paciente(String nombre, String tlf) {
+		this.nombre = nombre;
+		this.tlf = tlf;
+		this.visitas = new ArrayList<Cita>();
+	}
+	
+	
+	
+}

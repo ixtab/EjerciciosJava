@@ -1,0 +1,182 @@
+import java.util.Scanner;
+
+import fiestas.Fiesta;
+import fiestas.Local;
+
+public class Inicio {
+
+	public static void main(String[] args) {
+		
+		Local sitio = new Local("Discoteca Naxos",
+				"C/ de las Eras",
+				"48257", "Majalrayo",
+				"Segovia",
+				250);
+		Fiesta blas = new Fiesta(
+				"5 de marzo a las 21h",
+				"Blas",
+				sitio);
+		Scanner entrada = new Scanner(System.in);
+		String opcion = "";
+		System.out.println("Escribe ayuda para ver las oppciones.");
+		do {
+			System.out.println("¿Que quieres hacer?");
+			opcion = entrada.nextLine();
+			opcion = opcion.toLowerCase().trim();
+			String[] op = opcion.split(" ");
+			
+			switch (op[0]) {
+			
+			case "ayuda":
+				System.out.println("- Invitar [n]: invita a una o n personas");
+				System.out.println("- Consultar [opciones]: consulta las características de la fiesta");
+				System.out.println("\t- Opciones: ");
+				System.out.println("\t  direccion");
+				System.out.println("\t  fecha");
+				System.out.println("\t  hora");
+				System.out.println("\t  afitrion");
+				System.out.println("\t  invitados");
+				System.out.println("\t  bocadillos");
+				System.out.println("\t  bebidas");
+				System.out.println("\t  aforo");
+				System.out.println("- Cancelar: cancela una invitacion");
+				System.out.println("- Cambiar: cambia el sitio de la fiesta");
+				System.out.println("- Total: Indica el total de todas las invitaciones de todas las fiestas");
+				System.out.println("- Salir: termina el programa");
+				break;
+			
+			case "invitar":
+				if (op.length > 1) {
+					blas.invitar(Integer.parseInt(op[1]));
+				} else {
+					blas.invitar();	
+				}
+				break;
+				
+			case "consultar":
+				if (op.length < 2) {
+					System.out.println(blas.informa());
+				} else {
+					op[1] = op[1].toLowerCase();
+					switch (op[1]) {
+					
+					case "direccion":
+						System.out.println("La dirección es " + 
+								blas.getDireccion());
+						break;
+						
+					case "fecha":
+						System.out.println("La fiesta es el " + 
+								blas.getFechaHoraFiesta());
+						break;
+						
+					case "hora":
+						System.out.println("La fiesta es el " + 
+								blas.getFechaHoraFiesta());
+						break;
+						
+					case "anfitrion":
+						System.out.println("El anfitrión de la fiesta es " + 
+								blas.getNombreAnfitrion());
+						break;
+						
+					case "invitados":
+						System.out.println("Hay " + blas.getInvitados());
+						break;
+						
+					case "bocadillos":
+						System.out.println("Hay " + blas.getBocadillos() + 
+								" bocadillos");
+						break;
+						
+					case "bebidas":
+						System.out.println("Hay " + blas.getBebidas() + 
+								" bebidas");
+						break;
+						
+					case "aforo":
+						System.out.println("El aforo es de: " + 
+								blas.getAforo());
+						break;
+						
+					default:
+						System.out.println("No sé que quieres consultar");
+						break;
+					}
+				}
+				break;
+				
+			case "cancelar":
+				blas.cancelarInvitacion();
+				System.out.println("Se ha cancelado una invitación");
+				break;
+				
+			case "cambiar":
+				String nombre, direccion, cp, localidad, provincia;
+				int aforo;
+				
+				System.out.println("Pon el nombre del sitio:");
+				nombre = entrada.nextLine();
+				if (nombre.toLowerCase().equals("cancelar")) break;
+				
+				System.out.println("Pon la dirección del sitio:");
+				direccion = entrada.nextLine();
+				if (direccion.toLowerCase().equals("cancelar")) break;
+				
+				System.out.println("Pon el código postal del sitio:");
+				cp = entrada.nextLine();
+				if (cp.toLowerCase().equals("cancelar")) break;
+				
+				System.out.println("Pon el localidad del sitio:");
+				localidad = entrada.nextLine();
+				if (localidad.toLowerCase().equals("cancelar")) break;
+				
+				System.out.println("Pon la provincia del sitio:");
+				provincia = entrada.nextLine();
+				if (provincia.toLowerCase().equals("cancelar")) break;
+				
+				System.out.println("Pon el aforo del sitio:");
+				aforo = Integer.parseInt(entrada.nextLine());
+				
+				blas.setDireccion(nombre, direccion, cp, localidad, provincia, aforo);
+				System.out.println("Se ha cambiado la dirección");
+				break;
+			
+			case "total":
+				System.out.println(Fiesta.getTotalInvitaciones());
+				break;
+				
+			case "salir":
+				System.out.println("Hasta Pronto!");
+				break;
+				
+				
+			default:
+				System.out.println("No te he entendido");
+				break;
+			};
+			
+		} while (!opcion.toLowerCase().equals("salir"));
+		entrada.close();
+		
+	}
+
+}
+
+/*System.out.println(blas.informa());
+
+blas.invitar();
+
+System.out.println(blas.informa());
+
+blas.invitar(7);
+
+System.out.println(blas.informa());
+
+blas.invitar(8);
+
+System.out.println(blas.informa());
+
+blas.cancelarInvitacion();
+
+System.out.println(blas.informa());*/

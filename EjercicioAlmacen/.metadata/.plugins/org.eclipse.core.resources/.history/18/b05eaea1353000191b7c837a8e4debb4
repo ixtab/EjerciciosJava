@@ -1,0 +1,18 @@
+
+public class Test{
+	public static void main(String[] args) {
+		 private int i;
+		    
+		    public static void main(String [] args){
+		        Test test = new Test();
+		        System.out.println(test);
+		    }
+	}
+	
+	   static int algo(int i, int j){ return i*j;    } //función 1
+	   static long algo2(int i, int j){ return i*j;} //función 2
+	   static long algo3(long i, int j){ return i*j;} //función 3
+	   static long algo4(byte i, long j){ return i*j;} //función 4
+	   
+	   public String toString(){return "numero: "+i*2+2;}
+}

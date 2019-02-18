@@ -1,0 +1,26 @@
+
+public class Test{
+	
+	private int i;
+    public void setI(int i) {
+        this.i = i;
+    }
+    public String toString() {
+        return "Test [i=" + i + " es par "
+                + new Averiguar().esPar()+"]";//línea 1
+    }    
+    private class Averiguar{
+        public boolean esPar(){
+            return i%2 == 0 ? true : false;    //línea 2
+        }
+    }
+	
+	public static void main(String[] args) {
+	    Test test = new Test();
+        test.setI(7);
+        System.out.println(test);
+	}
+	
+	   
+	   
+}

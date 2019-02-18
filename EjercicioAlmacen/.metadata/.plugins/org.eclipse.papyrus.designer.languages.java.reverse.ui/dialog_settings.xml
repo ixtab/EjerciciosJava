@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="PruebasHerencia" key="/prueba/prueba.umlPruebasHerencia:projectName"/>
+	<item value="0" key="/prueba/prueba.umlPruebasHerencia:selectedParserIndex"/>
+	<item value="false" key="/prueba/prueba.uml:DISPLAY_MODEL"/>
+	<item value="false" key="/prueba/prueba.uml:DISPLAY_PACKAGES"/>
+	<item value="false" key="/prueba/prueba.uml:DISPLAY_CU"/>
+	<list key="/prueba/prueba.umlPruebasHerencia:creationpaths">
+		<item value="java.* ; ; java"/>
+		<item value="org.eclipse.papyrus.* ; ; *"/>
+		<item value="org.eclipse.* ; org.eclipse.papyrus.* ; *"/>
+		<item value=" org.osgi.* ; ; osgi.*"/>
+		<item value=" datatype.* ; ; datatype"/>
+	</list>
+	<list key="/prueba/prueba.umlPruebasHerencia:searchpaths">
+		<item value="java"/>
+		<item value="*"/>
+		<item value="osgi.*"/>
+		<item value="datatype"/>
+	</list>
+</section>

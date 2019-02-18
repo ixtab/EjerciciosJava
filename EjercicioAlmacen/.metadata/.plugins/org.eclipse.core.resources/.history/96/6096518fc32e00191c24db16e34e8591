@@ -1,0 +1,10 @@
+
+public class Inicio {
+
+	public static void main(String[] args) {
+		Persona p = new Persona("As","Asd");
+		System.out.println(p); // to String se implementa automáticamente.
+
+	}
+
+}

@@ -1,0 +1,44 @@
+import java.util.ArrayList;
+
+public class Paciente {
+
+	private String nombre;
+	private String tlf;
+	private ArrayList<Cita> visitas;
+	
+	public Paciente(String nombre, String tlf) {
+		this.nombre = nombre;
+		this.tlf = tlf;
+		this.visitas = new ArrayList<Cita>();
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getTlf() {
+		return tlf;
+	}
+
+	public void setTlf(String tlf) {
+		this.tlf = tlf;
+	}
+
+ 	public ArrayList<Cita> getVisitas() {
+ 		return visitas;
+ 	}
+  
+ 	public void registrarCita(String observaciones) {
+ 		
+ 		Cita nuevaCita = new Cita(observaciones);
+ 		this.visitas.add(nuevaCita);
+ 	}
+ 
+ 	
+	
+	
+}

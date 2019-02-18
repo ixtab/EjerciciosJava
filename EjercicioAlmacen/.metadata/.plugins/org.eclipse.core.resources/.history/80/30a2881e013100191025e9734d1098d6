@@ -1,0 +1,12 @@
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		Paciente juanPerez = new Paciente("Juan Perez", "655655655");
+		System.out.println(juanPerez);
+		
+		juanPerez.registrarCita("Tobillo roto");
+	}
+
+}

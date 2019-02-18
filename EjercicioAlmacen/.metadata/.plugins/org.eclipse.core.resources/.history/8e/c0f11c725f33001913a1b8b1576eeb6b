@@ -1,0 +1,51 @@
+package almacen;
+
+public class ProductoTextil extends Producto implements IArticulo {
+	private String talla;
+	private String color;
+
+	public ProductoTextil(String descripcion, int stock, 
+			int stockMinimo, float precioCompra,
+			float precioVenta, String talla, String color) {
+		super("Textil", descripcion, stock, stockMinimo, precioCompra, precioVenta);
+		this.talla = talla;
+		this.color = color;
+	}
+
+	@Override
+	public float comprar(int cantidad) {
+		// Retorna el importe de la compra.
+		this.setStock(this.getStock()+cantidad);
+		return cantidad*this.getPrecioCompra();
+	}
+	@Override
+	public float comprar() {
+		// Retorna el importe de la compra.
+		this.setStock(this.getStock()+1);
+		return this.getPrecioCompra();
+	}
+	@Override
+	public float vender(int cantidad) {
+		// Retorna el importe de la venta.
+		this.setStock(this.getStock()-cantidad);
+		reposicion();
+		return cantidad*this.getPrecioVenta();
+	}
+	@Override
+	public float vender() {
+		// Retorna el importe de la venta.
+		this.setStock(this.getStock()-1);
+		System.out.println(reposicion());
+		return this.getPrecioVenta();
+	}
+
+	@Override
+	public String toString() {
+		return  super.toString() + ", Talla=" + talla + ", Color=" + color;
+	}
+
+	@Override
+	public String prepararProducto() {
+		return "Planchando y empaquetando el producto: " + this.getDescripcion();
+	}
+}

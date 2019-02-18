@@ -1,0 +1,14 @@
+package dibujo;
+
+public class Circunferencia extends Figura {
+
+	public Circunferencia() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Circunferencia(int alto, int ancho) {
+		super(alto, ancho);
+		// TODO Auto-generated constructor stub
+	}
+
+}

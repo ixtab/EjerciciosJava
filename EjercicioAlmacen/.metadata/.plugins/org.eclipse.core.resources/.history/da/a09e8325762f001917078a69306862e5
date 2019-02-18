@@ -1,0 +1,16 @@
+package dibujo;
+
+public class Triangulo extends Figura {
+	
+	public Triangulo() {
+		
+	}
+
+	public Triangulo(int alto, int ancho) {
+		super(alto, ancho);
+	}
+
+	public double Area() {
+		return this.alto * this.ancho 
+	}
+}

@@ -1,0 +1,133 @@
+import java.util.Scanner; // ESTOY CON el LOCAL!!!
+
+import fiestas.Fiesta;
+import fiestas.Local;
+
+public class Inicio {
+
+	public static void main(String[] args) {
+		
+		Local sitio = new Local("Discoteca Naxos", "C/ Eras", "48257", "Majalrayo", "Segovia", 250);
+		Fiesta blas = new Fiesta(
+				"5 de marzo a las 9",
+				"Blas", sitio);
+		Scanner entrada = new Scanner(System.in);
+		String opcion = "";
+					
+		do {
+			System.out.println("¿Que quieres hacer?");
+			opcion = entrada.nextLine();
+			opcion = opcion.toLowerCase().trim();
+			String[] op = opcion.split(" ");
+			switch (op[0]) {
+				case "invitar":
+					if (op.length > 1) {
+						blas.invitar(Integer.parseInt(op[1]));
+						
+					} else {
+						blas.invitar();
+						
+					}
+					break;
+					
+				case "consultar":
+					if (op.length < 2) {
+						System.out.println(blas.informa());
+					} else {
+						op[1] = op[1].toLowerCase();
+						switch (op[1]) {
+						case "direccion":
+							System.out.println("La dirección es en " + blas.getDireccion());
+							break;
+						case "fecha":
+							System.out.println("La fiesta es el " + blas.getFechaHoraFiesta());
+							break;
+						case "hora":
+							System.out.println("La fiesta es el " + blas.getFechaHoraFiesta());
+							break;
+						case "anfitrion":
+							System.out.println("El anfitrión de la fiesta es " + blas.getNombreAnfitrion());
+							break;
+						case "invitados":
+							System.out.println("Hay " + blas.getInvitados() + " invitados");
+							break;
+						case "bocadillos":
+							System.out.println("Hay " + blas.getBocadillos() + " bocadillos");
+							break;
+						case "bebidas":
+							System.out.println("Hay " + blas.getBebidas() + " bebidas");
+							break;
+							
+						default:
+							System.out.println("No sé que quieres consultar");
+							break;
+						}
+					}
+					break;
+					
+				case "cancelar":
+					blas.cancelarInvitacion();
+					System.out.println("Se ha cancelado una invitación");
+					break;
+					
+				case "cambiar":
+					String nombre, direccion, cp, localidad, provincia;
+					int aforo;
+					entrada.nextLine();
+					System.out.println("Pon el nombre del sitio:");
+					nombre = entrada.nextLine();
+					if (nombre.toLowerCase().equals("cancelar")) break;
+					System.out.println("Pon la dirección del sitio:");
+					direccion = entrada.nextLine();
+					if (direccion.toLowerCase().equals("cancelar")) break;
+					System.out.println("Pon el código postal del sitio:");
+					cp = entrada.nextLine();
+					if (cp.toLowerCase().equals("cancelar")) break;
+					System.out.println("Pon el localidad del sitio:");
+					localidad = entrada.nextLine();
+					if (localidad.toLowerCase().equals("cancelar")) break;
+					System.out.println("Pon la provincia del sitio:");
+					provincia = entrada.nextLine();
+					if (provincia.toLowerCase().equals("cancelar")) break;
+					System.out.println("Pon el aforo del sitio:");
+					aforo = Integer.parseInt(entrada.nextLine());
+					
+					blas.setDireccion(nombre, direccion, cp, localidad, provincia, aforo);
+					System.out.println("Se ha cambiado la dirección");
+					break;
+				
+				case "total":
+					System.out.println(Fiesta.getTotalInvitaciones());
+				
+				case "salir":
+					System.out.println("Hasta Pronto!");
+					break;
+					
+				default:
+					System.out.println("No te he entendido");
+					break;
+			};
+		} while (!opcion.toLowerCase().equals("salir"));
+		entrada.close();
+		
+	}
+
+}
+
+/*System.out.println(blas.informa());
+
+blas.invitar();
+
+System.out.println(blas.informa());
+
+blas.invitar(7);
+
+System.out.println(blas.informa());
+
+blas.invitar(8);
+
+System.out.println(blas.informa());
+
+blas.cancelarInvitacion();
+
+System.out.println(blas.informa());*/

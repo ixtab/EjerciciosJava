@@ -1,0 +1,10 @@
+import venta_localidades.Cliente;
+
+public class Inicio {
+
+	public static void main(String[] args) {
+		Cliente a = new Cliente("pedro", 65, "622653321");
+		System.out.println(a.tipoCliente());
+	}
+
+}

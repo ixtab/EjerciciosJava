@@ -1,0 +1,37 @@
+/**
+ * 
+ */
+
+/**
+ * @author admin
+ *
+ */
+public class Pulga extends Animal {
+
+	/**
+	 * @param nombre
+	 */
+	public Pulga(String nombre) {
+		super(nombre);
+		// TODO Auto-generated constructor stub
+	}
+
+	/* (non-Javadoc)
+	 * @see Animal#morder()
+	 */
+	@Override
+	public String morder() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	/* (non-Javadoc)
+	 * @see Animal#mover()
+	 */
+	@Override
+	public String mover() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

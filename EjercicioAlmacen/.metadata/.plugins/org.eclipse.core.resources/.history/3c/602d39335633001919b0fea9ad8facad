@@ -1,0 +1,6 @@
+import java.util.HashSet;
+
+public class Hash {
+	public HashSet<String> prueba = new HashSet<String>();
+	 prueba.add("hola");
+}

@@ -1,0 +1,11 @@
+import matematicas.Matematicas;
+
+public class Inicio {
+
+	public static void main(String[] args) {
+		System.out.println(Matematicas.generarTablaMultiplicar(12));
+		System.out.println(Matematicas.comprobarSigno(-7));
+		System.out.println(Matematicas.trianguloNumerico(25));
+	}
+
+}

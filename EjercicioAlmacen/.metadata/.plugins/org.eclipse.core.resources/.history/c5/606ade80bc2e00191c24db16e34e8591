@@ -1,0 +1,14 @@
+package venta_localidades;
+
+public class Cliente {
+	public String nombre; 
+	public int edad;
+	public String telefono;
+	
+	public Cliente(String nombre, int edad, String telefono) {
+		this.nombre = nombre;
+		this.edad = edad;
+		this.telefono = telefono;
+	}
+
+}

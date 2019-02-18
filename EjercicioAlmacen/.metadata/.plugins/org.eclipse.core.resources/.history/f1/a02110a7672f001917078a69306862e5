@@ -1,0 +1,9 @@
+import venta_localidades.Cliente;
+
+public class Inicio {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

@@ -1,0 +1,11 @@
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.TreeSet;
+import java.util.Vector;
+
+
+public class Hash{
+	HashSet<String> arr1 = new HashSet<String>();
+
+}

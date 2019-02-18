@@ -1,0 +1,18 @@
+
+public class Pulga extends Animal {
+
+	public Pulga(String nombre) {
+		super("Pulga");
+	}
+
+	@Override
+	public String morder(Animal ani) {
+		return "La pulga muerde al " + ani;
+	}
+
+	@Override
+	public String mover() {
+		return "La pulga se mueve";
+	}
+
+}

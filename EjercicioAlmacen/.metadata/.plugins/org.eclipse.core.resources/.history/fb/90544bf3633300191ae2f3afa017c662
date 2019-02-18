@@ -1,0 +1,41 @@
+package almacen;
+
+public class ProductoTecnología extends Producto implements IArticulo {
+
+	public ProductoTecnología(String descripcion, int stock, int stockMinimo, float precioCompra,
+			float precioVenta) {
+		super("Tecnología", descripcion, stock, stockMinimo, precioCompra, precioVenta);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public float comprar(int cantidad) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public float comprar() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public float vender(int cantidad) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public float vender() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public String prepararProducto() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

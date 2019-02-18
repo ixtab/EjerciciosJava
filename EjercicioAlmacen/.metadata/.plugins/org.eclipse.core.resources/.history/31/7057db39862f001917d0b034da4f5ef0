@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architecture:ArchitectureDomain xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:architecture="http://www.eclipse.org/papyrus/infra/core/architecture" xmi:id="_6GjREC-FEeme76zdAvZnoQ">
+  <stakeholders xmi:type="architecture:Stakeholder" xmi:id="_CQXQ0C-GEeme76zdAvZnoQ"/>
+  <stakeholders xmi:type="architecture:Stakeholder" xmi:id="_H_n5sC-GEeme76zdAvZnoQ"/>
+  <concerns xmi:type="architecture:Concern" xmi:id="_F_6EsC-GEeme76zdAvZnoQ"/>
+  <contexts xmi:type="architecture:ArchitectureDescriptionLanguage" xmi:id="_HOjCEC-GEeme76zdAvZnoQ"/>
+  <contexts xmi:type="architecture:ArchitectureFramework" xmi:id="_DHu9sC-GEeme76zdAvZnoQ">
+    <viewpoints xmi:type="architecture:ArchitectureViewpoint" xmi:id="_EEYzMC-GEeme76zdAvZnoQ"/>
+    <viewpoints xmi:type="architecture:ArchitectureViewpoint" xmi:id="_FDDa4C-GEeme76zdAvZnoQ"/>
+  </contexts>
+</architecture:ArchitectureDomain>

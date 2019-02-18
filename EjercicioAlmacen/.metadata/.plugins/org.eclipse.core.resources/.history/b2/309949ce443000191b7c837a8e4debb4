@@ -1,0 +1,20 @@
+
+public class Perro extends Animal {
+
+	public String[] partes = {"cabeza", "orejas", "cuello", "espalda", "tripa", "patas", "rabo"};
+	
+	public Perro() {
+		super("Perro");
+	}
+
+	@Override
+	public String morder(Animal ani) {
+		return "Perro muerde " + ani; 
+	}
+
+	@Override
+	public String mover() {
+		return "El perro corre por el campo";
+	}
+
+}

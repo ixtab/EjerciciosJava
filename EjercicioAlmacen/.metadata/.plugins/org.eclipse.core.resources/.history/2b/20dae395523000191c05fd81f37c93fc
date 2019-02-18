@@ -1,0 +1,17 @@
+import java.util.ArrayList;
+
+public class Inicio {
+
+	public static void main(String[] args) {
+		
+		ArrayList<String> pepe = new ArrayList<String>();
+		pepe.add("asdñfjásd");
+		pepe.add("poie");
+		pepe.add("poie");
+		
+		System.out.println(pepe.hashCode());
+		System.out.println(pepe[1].hashCode());
+		System.out.println(pepe[2].hashCode());
+	}
+
+}

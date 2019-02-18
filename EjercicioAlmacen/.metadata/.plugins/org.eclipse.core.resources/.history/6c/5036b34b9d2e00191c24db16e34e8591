@@ -1,0 +1,76 @@
+package fiestas;
+
+public class Fiesta {
+	private String fechaHoraFiesta;
+	private String nombreAnfitrion;
+	private Local sitio;
+	private int invitados = 0;
+	private int bocadillos = 0;
+	private int bebidas = 0;
+	
+	public Fiesta(String fechaHoraFiesta, String nombreAnfitrion, String direccion) {
+		this.fechaHoraFiesta = fechaHoraFiesta;
+		this.nombreAnfitrion = nombreAnfitrion;
+		this.sitio = new Local("","","","","", 0);
+	}
+	
+	public String informa() {
+		return  "La fiesta de " + nombreAnfitrion + " es el " + fechaHoraFiesta +
+				" en "+	sitio + ". Hay " + invitados + " invitados, " + 
+				bocadillos + " bocadillos y " + bebidas + " bebidas.";
+	}
+	
+	public void invitar() {
+		invitados++;
+		bocadillos = bocadillos + 3;
+		bebidas = bebidas + 5;
+	}
+
+	public void invitar(int invitados) {
+		
+		this.invitados += invitados;
+		bocadillos = bocadillos + 3*invitados;
+		bebidas = bebidas + 5*invitados;
+	}
+	
+	public void cancelarInvitacion() {
+		if(invitados > 0) {
+			invitados--;
+			bocadillos = bocadillos - 3;
+			bebidas = bebidas - 5;
+		} else {
+			System.out.println("No hay invitados en la fista");
+		}
+		
+	}
+		
+	// Getters y Setters
+	public String getDireccion() {
+		return sitio.getLocal();
+	}
+	public void setDireccion(String nombre, String direccion, String cp, String localidad, String provincia, int aforo) {
+		this.sitio.setNombre(nombre);
+		this.sitio.setDireccion(direccion);
+		this.sitio.setCp(cp);
+		this.sitio.setLocalidad(localidad);
+		this.sitio.setProvincia(provincia);
+		this.sitio.setAforo(aforo);
+		
+	}
+	public String getFechaHoraFiesta() {
+		return fechaHoraFiesta;
+	}
+	public String getNombreAnfitrion() {
+		return nombreAnfitrion;
+	}
+	public int getInvitados() {
+		return invitados;
+	}
+	public int getBocadillos() {
+		return bocadillos;
+	}
+	public int getBebidas() {
+		return bebidas;
+	}
+	
+}
