@@ -2,7 +2,6 @@
 import java.util.HashSet;
 
 public class PruebaHash {
-
 	
 	static HashSet<String> hs = new HashSet<String>(); 
 	
