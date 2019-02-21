@@ -38,3 +38,173 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.jface.text 2 0 2019-02-19 09:08:30.223
 !MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+!SESSION 2019-02-20 11:08:59.658 -----------------------------------------------
+eclipse.buildId=4.9.0.I20180906-0745
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-02-20 11:09:10.488
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\admin'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.wst.common.modulecore 4 0 2019-02-20 11:11:22.734
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.common.componentcore.internal.impl.ComponentCoreURIConverter.newPlatformURI(ComponentCoreURIConverter.java:102)
+	at org.eclipse.wst.common.componentcore.internal.impl.ComponentCoreURIConverter.access$1(ComponentCoreURIConverter.java:93)
+	at org.eclipse.wst.common.componentcore.internal.impl.ComponentCoreURIConverter$1.delegatedGetURI(ComponentCoreURIConverter.java:173)
+	at org.eclipse.emf.ecore.resource.impl.URIMappingRegistryImpl.getURI(URIMappingRegistryImpl.java:120)
+	at org.eclipse.emf.ecore.resource.impl.URIMappingRegistryImpl$URIMapImpl.getURI(URIMappingRegistryImpl.java:162)
+	at org.eclipse.jem.internal.util.emf.workbench.WorkspaceResourceHandler.getResource(WorkspaceResourceHandler.java:47)
+	at org.eclipse.jem.internal.util.emf.workbench.ProjectResourceSetImpl.getResourceFromHandlers(ProjectResourceSetImpl.java:836)
+	at org.eclipse.jem.internal.util.emf.workbench.ProjectResourceSetImpl.delegatedGetResource(ProjectResourceSetImpl.java:689)
+	at org.eclipse.jem.internal.util.emf.workbench.ProjectResourceSetImpl.getResource(ProjectResourceSetImpl.java:1041)
+	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.createModelResource(JEE5ModelProvider.java:203)
+	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.getModelResource(JEE5ModelProvider.java:188)
+	at org.eclipse.jst.jee.model.internal.AppClient5ModelProvider.getModelObject(AppClient5ModelProvider.java:42)
+	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.getModelObject(JEE5ModelProvider.java:231)
+	at org.eclipse.jst.jee.ui.internal.navigator.AppClient5ContentProvider.getNewContentProviderInstance(AppClient5ContentProvider.java:75)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.wst.common.modulecore 4 0 2019-02-20 11:11:22.815
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.common.componentcore.internal.impl.ComponentCoreURIConverter.newPlatformURI(ComponentCoreURIConverter.java:102)
+	at org.eclipse.wst.common.componentcore.internal.impl.ComponentCoreURIConverter.access$1(ComponentCoreURIConverter.java:93)
+	at org.eclipse.wst.common.componentcore.internal.impl.ComponentCoreURIConverter$1.delegatedGetURI(ComponentCoreURIConverter.java:173)
+	at org.eclipse.emf.ecore.resource.impl.URIMappingRegistryImpl.getURI(URIMappingRegistryImpl.java:120)
+	at org.eclipse.emf.ecore.resource.impl.URIMappingRegistryImpl$URIMapImpl.getURI(URIMappingRegistryImpl.java:162)
+	at org.eclipse.jem.internal.util.emf.workbench.ProjectResourceSetImpl.detectURIMapping(ProjectResourceSetImpl.java:761)
+	at org.eclipse.jem.internal.util.emf.workbench.ProjectResourceSetImpl.createResource(ProjectResourceSetImpl.java:779)
+	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.createModelResource(JEE5ModelProvider.java:206)
+	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.getModelResource(JEE5ModelProvider.java:188)
+	at org.eclipse.jst.jee.model.internal.AppClient5ModelProvider.getModelObject(AppClient5ModelProvider.java:42)
+	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.getModelObject(JEE5ModelProvider.java:231)
+	at org.eclipse.jst.jee.ui.internal.navigator.AppClient5ContentProvider.getNewContentProviderInstance(AppClient5ContentProvider.java:75)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 4 2 2019-02-20 11:11:22.817
+!MESSAGE An internal error occurred during: "Loading descriptor for PruebaEE.".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jem.internal.util.emf.workbench.ProjectResourceSetImpl.detectURIMapping(ProjectResourceSetImpl.java:761)
+	at org.eclipse.jem.internal.util.emf.workbench.ProjectResourceSetImpl.createResource(ProjectResourceSetImpl.java:779)
+	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.createModelResource(JEE5ModelProvider.java:206)
+	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.getModelResource(JEE5ModelProvider.java:188)
+	at org.eclipse.jst.jee.model.internal.AppClient5ModelProvider.getModelObject(AppClient5ModelProvider.java:42)
+	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.getModelObject(JEE5ModelProvider.java:231)
+	at org.eclipse.jst.jee.ui.internal.navigator.AppClient5ContentProvider.getNewContentProviderInstance(AppClient5ContentProvider.java:75)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 4 2 2019-02-20 11:11:53.004
+!MESSAGE An internal error occurred during: "Loading descriptor for PruebaEE.".
+!STACK 0
+java.lang.ClassCastException: org.eclipse.jst.javaee.applicationclient.internal.impl.ApplicationClientImpl cannot be cast to org.eclipse.jst.javaee.application.Application
+	at org.eclipse.jst.jee.ui.internal.navigator.Ear5ContentProvider.getNewContentProviderInstance(Ear5ContentProvider.java:154)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 4 2 2019-02-20 11:12:20.297
+!MESSAGE Deadlock detected. All locks owned by thread Worker-12: Loading descriptor for PruebaEE. will be suspended.
+!STACK 0
+java.lang.IllegalStateException
+	at org.eclipse.core.internal.jobs.DeadlockDetector.reportDeadlock(DeadlockDetector.java:602)
+	at org.eclipse.core.internal.jobs.DeadlockDetector.lockWaitStart(DeadlockDetector.java:406)
+	at org.eclipse.core.internal.jobs.LockManager.addLockWaitThread(LockManager.java:157)
+	at org.eclipse.core.internal.jobs.OrderedLock.doAcquire(OrderedLock.java:171)
+	at org.eclipse.core.internal.jobs.OrderedLock.acquire(OrderedLock.java:109)
+	at org.eclipse.wst.common.internal.emf.ResourceSynchronizedIsLoadingAdapter.waitForResourceToLoad(ResourceSynchronizedIsLoadingAdapter.java:71)
+	at org.eclipse.wst.common.internal.emf.resource.CompatibilityXMIResourceImpl.waitForResourceToLoadIfNecessary(CompatibilityXMIResourceImpl.java:382)
+	at org.eclipse.wst.common.internal.emf.resource.CompatibilityXMIResourceImpl.isLoaded(CompatibilityXMIResourceImpl.java:373)
+	at org.eclipse.wst.common.componentcore.internal.ModuleStructuralModel.removeResource(ModuleStructuralModel.java:104)
+	at org.eclipse.wst.common.internal.emfworkbench.integration.EditModel.removeResources(EditModel.java:833)
+	at org.eclipse.wst.common.internal.emfworkbench.integration.EditModel.resourceChanged(EditModel.java:786)
+	at org.eclipse.wst.common.internal.emfworkbench.EMFWorkbenchContext.notifyEditModels(EMFWorkbenchContext.java:278)
+	at org.eclipse.wst.common.internal.emfworkbench.EMFWorkbenchContext.removedResource(EMFWorkbenchContext.java:341)
+	at org.eclipse.wst.common.internal.emfworkbench.EMFWorkbenchContext$ResourceSetListener.notifyChanged(EMFWorkbenchContext.java:312)
+	at org.eclipse.jem.internal.util.emf.workbench.ProjectResourceSetImpl.eNotify(ProjectResourceSetImpl.java:1274)
+	at org.eclipse.emf.common.notify.impl.NotificationChainImpl.dispatch(NotificationChainImpl.java:200)
+	at org.eclipse.emf.common.notify.impl.NotificationChainImpl.dispatch(NotificationChainImpl.java:188)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.remove(NotifyingListImpl.java:718)
+	at org.eclipse.jem.internal.util.emf.workbench.ProjectResourceSetImpl$SynchronizedResourcesEList.remove(ProjectResourceSetImpl.java:497)
+	at org.eclipse.emf.common.util.AbstractEList.remove(AbstractEList.java:456)
+	at org.eclipse.jem.internal.util.emf.workbench.ProjectResourceSetImpl$SynchronizedResourcesEList.remove(ProjectResourceSetImpl.java:487)
+	at org.eclipse.wst.common.internal.emfworkbench.integration.ResourceSetWorkbenchEditSynchronizer.processDeferredRemovedResources(ResourceSetWorkbenchEditSynchronizer.java:155)
+	at org.eclipse.wst.common.internal.emfworkbench.integration.ResourceSetWorkbenchEditSynchronizer.processDeferredResources(ResourceSetWorkbenchEditSynchronizer.java:231)
+	at org.eclipse.wst.common.internal.emfworkbench.integration.ResourceSetWorkbenchEditSynchronizer.resourceChanged(ResourceSetWorkbenchEditSynchronizer.java:141)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:379)
+	at org.eclipse.core.internal.resources.Workspace.checkpoint(Workspace.java:565)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:265)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2319)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:308)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:99)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:219)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2319)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 1 org.eclipse.core.jobs 4 2 2019-02-20 11:12:20.297
+!MESSAGE Thread ModalContext has locks: R/, F/PruebaEE/.settings, OrderedLock (0), MultiRule[P/AbstracciónEjemplos,P/ComposicionDebilCoche,P/Ejemplo1,P/Ejemplo2,P/EjemploClaseAbstracta,P/EjemploColecciones,P/EjemploExcepciones,P/EjemploInterface,P/EjemploPaquetes,P/EjemplosFicheros,P/EjercicioAdivina,P/EjercicioAlmacen,P/EjercicioAlmacen2,P/EjercicioCuenta,P/EjercicioFiesta,P/EjercicioFiesta2,P/EjercicioFiguras,P/EjercicioFuncionesEstaticas,P/EjercicioPacientes,P/EjercicioScanner,P/EjercicioTheremin,P/Ejercicios1,P/EjerciciosCadenas,P/EjerciciosJava,P/Examen,P/PequenoTeatro,P/ProyectoCoche,P/PruebaEnvoltorio,P/PruebasArrays,P/PruebasHerencia,P/PruebasVarias,P/RemoteSystemsTempFiles,P/almacen], OrderedLock (53) and is waiting for lock OrderedLock (54)
+!SUBENTRY 1 org.eclipse.core.jobs 4 2 2019-02-20 11:12:20.297
+!MESSAGE Thread Worker-12: Loading descriptor for PruebaEE. has locks: OrderedLock (54) and is waiting for lock F/PruebaEE/.settings
+
+!ENTRY org.eclipse.core.jobs 4 2 2019-02-20 11:12:20.423
+!MESSAGE An internal error occurred during: "Loading descriptor for PruebaEE.".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.getModelResource(JEE5ModelProvider.java:175)
+	at org.eclipse.jst.jee.model.internal.EAR5ModelProvider.getModelObject(EAR5ModelProvider.java:53)
+	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.getModelObject(JEE5ModelProvider.java:231)
+	at org.eclipse.jst.jee.ui.internal.navigator.Ear5ContentProvider.getNewContentProviderInstance(Ear5ContentProvider.java:154)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2019-02-20 11:13:48.537 -----------------------------------------------
+eclipse.buildId=4.9.0.I20180906-0745
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-02-20 11:13:57.625
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\admin'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-02-21 09:15:44.375 -----------------------------------------------
+eclipse.buildId=4.9.0.I20180906-0745
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-02-21 09:16:12.222
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\admin'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jface.text 2 0 2019-02-21 09:19:48.947
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.eclipse.jface.text 2 0 2019-02-21 09:51:29.440
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'

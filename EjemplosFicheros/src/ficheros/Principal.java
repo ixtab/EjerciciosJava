@@ -10,8 +10,6 @@ public class Principal {
 	public static void main(String args[]) throws IOException {
 		
 		// mostrar();
-		
-				
 				
 		File fich = new File("C:\\Users\\admin\\Desktop\\java\\zzz_ficheros_EjemplosFicheros\\pelis2.jcc");
 		boolean ok = fich.createNewFile();
